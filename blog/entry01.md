@@ -1,7 +1,9 @@
-# Entry 1
-##### X/X/XX
+# Entry 1: Deciding on My Topic 
+##### 10/7/24
 
-Text
+**SEP Freedom Project**
+
+# **Choosing a topic**
 
 [Next](entry02.md)
 
