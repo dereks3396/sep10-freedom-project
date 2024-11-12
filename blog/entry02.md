@@ -1,12 +1,11 @@
-## Entry 2: Adding on to the Topic (Wireless)
+## Entry 2: Exploring Wireless Devices
 
 ---
 
 ## Introduction
 
-In this blog, I'm learning about wireless devices like phones and smart home gadgets and how they connect to each other. Wireless devices make it possible for us to communicate and access information without wires. This entry is based on three resources, [How Wireless Works](https://howwirelessworks.ctia.org), [Explained: How does wireless work?](https://www.grandmetric.com/explained-how-does-wireless-work/), and [What Is a Wireless Network or Wi-Fi?](https://www.fortinet.com/resources/cyberglossary/wireless-network)
+In this blog entry, I am exploring the world of wireless devices, like as smartphones, smart home gadgets, and wearable technology, and learning how they connect to each other without the need for cables. Wireless devices make it possible for us to communicate, access information, and control various functions around us, even from a distance. They use different types of signals, like radio waves, to connect with each other and with the internet. This entry is based on three resources that help explain these concepts, [How Wireless Works](https://howwirelessworks.ctia.org), [Explained: How does wireless work?](https://www.grandmetric.com/explained-how-does-wireless-work/), and [What Is a Wireless Network or Wi-Fi?](https://www.fortinet.com/resources/cyberglossary/wireless-network)
 
-### Resources Explored
 
 ## First Article
 The first article, [How Wireless Works](https://howwirelessworks.ctia.org), explains how data moves from one device to another through a wireless network. For example, when we send a message from a smartphone, the data travels through different stops like cell towers and routers before it reaches another phone or device.
