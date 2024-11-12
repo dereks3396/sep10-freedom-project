@@ -1,4 +1,4 @@
-## Wireless Devices: How They Connect Us
+## Entry 2: Adding on to the Topic (Wireless)
 
 ### Introduction
 In this blog, I'm learning about wireless devices—like phones and smart home gadgets—and how they connect to each other. Wireless devices make it possible for us to communicate and access information without wires. This entry is based on three resources: [How Wireless Works](https://howwirelessworks.ctia.org), [Explained: How does wireless work?](https://www.grandmetric.com/explained-how-does-wireless-work/), and [What Is a Wireless Network or Wi-Fi?](https://www.fortinet.com/resources/cyberglossary/wireless-network)
