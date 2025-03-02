@@ -1,5 +1,5 @@
-# Entry 4
-##### X/X/XX
+# Entry 4: Learning how to use my tool
+##### 3/2/25
 
 Text
 
