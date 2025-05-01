@@ -75,3 +75,20 @@
   * Live device comparisons
   * Rating system
   * Feedback forms
+
+
+
+
+
+ <!-- DO NOT USE THIS YET
+
+ | Name | Glows | Grows |
+ | -------- | ------- | ------- |
+ |   |   |
+ |   |   |
+ |   |   |
+ |   |   |
+ |   |   |
+ |   |   |
+
+ -->
