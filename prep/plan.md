@@ -16,7 +16,28 @@
 * [Orbitron](https://fonts.google.com/specimen/Orbitron) - Headings, futuristic look
 * [Open Sans](https://fonts.google.com/specimen/Open+Sans) - Secondary text, readable
 
-#### MVP (Most Valuable Product)
+#### MVP
+
+## Bootstrap Elements
+* Cards
+  * For displaying device information
+  * Each card will have:
+    - Device image/3D model
+    - Device name
+    - Key features
+  * Responsive grid layout using card-deck
+
+* Navbar
+  * Sticky-top navigation
+  * Collapsible on mobile
+  * Smooth scrolling navigation links
+  * Dropdown for device categories
+
+* Carousel
+  * Showcase featured devices
+  * Auto-sliding presentation
+  * Caption overlays for device descriptions
+
 
 * Project Structure
 * Responsive Navigation Implementation
