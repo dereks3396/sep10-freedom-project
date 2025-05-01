@@ -5,7 +5,7 @@
 * [Desktop](https://wireframe.cc/zuKB2k)
 
 ## Colors
-* `#2B4570` - Deep Blue (Primary - representing technology/wireless)
+* `#2B4570` - Deep Blue (Primary - representing technology)
 * `#A5D8FF` - Light Blue (Secondary, representing communication)
 * `#FFFFFF` - White (Background)
 * `#333333` - Dark Gray (Text)
