@@ -12,9 +12,9 @@
 * `#7BE0AD` - Mint Green (Extra, for more variety)
 
 ## Fonts
-* [Roboto](https://fonts.google.com/specimen/Roboto) - Primary text, clean and modern
-* [Orbitron](https://fonts.google.com/specimen/Orbitron) - Headings, futuristic look
-* [Open Sans](https://fonts.google.com/specimen/Open+Sans) - Secondary text, readable
+* [Outfit](https://fonts.google.com/specimen/Outfit) - Primary text, clean and modern
+* [Oregano](https://fonts.google.com/specimen/Oregano) - Headings, Similar things
+* [Nunito](https://fonts.google.com/specimen/Nunito) - Secondary text, readable
 
 #### MVP
 
