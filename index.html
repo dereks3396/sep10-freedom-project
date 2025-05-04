@@ -9,7 +9,71 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
         <style>
             /* CSS */
+            <style>
+        :root {
+            --primary: #2B4570;
+            --secondary: #A5D8FF;
+            --background: #FFFFFF;
+            --text: #333333;
+            --accent: #7BE0AD;
+        }
 
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        h2, h3, .navbar-brand {
+            font-family: 'Oregano', cursive;
+            color: var(--primary);
+        }
+
+        .navbar {
+            background-color: var(--primary) !important;
+        }
+
+        .card {
+            transition: transform 0.3s;
+            border: 2px solid var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            width: 2px;
+            height: 100%;
+            background: var(--secondary);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
         </style>
 
         <title>Wireless Communication Tech</title>
