@@ -81,7 +81,7 @@
 
 
  | Name | Glows | Grows |
- | -------- | ------- | ------- |
+ | Alberto | I like the color template that you are using for your website as well as the images responsiveness | Did you think about having the software, hardware, and innovation information on different slides so that you can have a use for the bootstrap navbar? Once you include your last image, try and put a discription for your future innovation.|
  |   |   |
  |   |   |
  |   |   |
