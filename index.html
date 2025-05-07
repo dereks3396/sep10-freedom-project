@@ -16,8 +16,8 @@
         :root {
             --primary: #2B4570;
             --secondary: #A5D8FF;
-            --background: #000000; /* Changed background to black */
-            --text: #FFFFFF; /* Changed text color to white for readability on black background */
+            --background: #000000;
+            --text: #FFFFFF;
             --accent: #7BE0AD;
         }
 
@@ -40,8 +40,8 @@
             transition: transform 0.3s;
             border: 2px solid var(--secondary);
             margin-bottom: 1.5rem;
-            background-color: #1a1a1a; /* Added a slightly lighter background for cards */
-            color: var(--text); /* Ensure card text is readable */
+            background-color: #1a1a1a;
+            color: var(--text);
         }
 
         .card:hover {
@@ -87,11 +87,13 @@
             background: url('prep/background-image.webp') no-repeat center center/cover;
             background-attachment: fixed;
             display: flex;
+            flex-direction: column; /* Added to stack elements vertically */
             justify-content: center;
             align-items: center;
             text-align: center;
             color: white;
             overflow: hidden;
+            padding-bottom: 10vh; /* Added padding to make space for the description below */
         }
 
         .hero-section::before {
@@ -112,6 +114,17 @@
             font-size: 4rem;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1rem; /* Added margin to separate title from description */
+            margin-top: -10vh; /* Adjusted margin-top to move the title higher */
+        }
+
+        .hero-description {
+            position: relative;
+            z-index: 1;
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            max-width: 80%; /* Limit the width of the description */
         }
     </style>
 
@@ -142,6 +155,7 @@
     <!-- Hero Section with Background and Title -->
     <section class="hero-section">
         <h1 class="hero-title">Wireless Tech</h1>
+        <p class="hero-description">Explore the evolution and future of wireless communication technologies, from current apps and devices to exciting innovations on the horizon.</p>
     </section>
 
     <!-- Current Technologies -->
