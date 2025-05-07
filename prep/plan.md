@@ -80,12 +80,12 @@
 
 
 
- | Name | Glows | Grows |
- | Alberto | I like the color template that you are using for your website as well as the images responsiveness | Did you think about having the software, hardware, and innovation information on different slides so that you can have a use for the bootstrap navbar? Once you include your last image, try and put a discription for your future innovation.|
- | Damaris  | I liked your Aframe creation. It's responsive and links are accurate.   | Try adding in some context or an intro, add in some links to your navbar to go to certain sections in you website
- |William   |I like how you put all the benefits right under each image.   |Have you considered decreasing the size of the image so it doesn't fill about 70% of the page and blocks the view of the information, also, what would happen if someone just slides their hand at the very start of the website and it goes flying off the page? Have you considered making the A-Frame smaller? Also, the navbar doesn't seem to work.
- | Abdelrahman | I really, REALLY like the timeline! It looks sick and is informative. | You should consider making the AFrame smaller. It's a 3D model but you can move around, so It's unneccessary to have to scroll to the side of the website to view it properly.
- |   |   |
- |   |   |
- |   |   |
+| Name        | Glows                                                                                                 | Grows                                                                                                                                                                                                                                                      |
+|:------------|:------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Alberto     | I like the color template that you are using for your website as well as the images' responsiveness.  | Did you think about having the software, hardware, and innovation information on different slides so you can use the Bootstrap navbar? Once you include your last image, try and put a description for your future innovation.                         |
+| Damaris     | I liked your A-Frame creation. It's responsive and links are accurate.                                | Try adding in some context or an intro, and add some links to your navbar to jump to certain sections in your website.                                                                                                                                    |
+| William     | I like how you put all the benefits right under each image.                                            | Have you considered decreasing the image size so it doesn’t fill about 70% of the page and block the information? Also, what would happen if someone swipes at the start and it flies off the page? The navbar also doesn't seem to work.               |
+| Abdelrahman | I really, REALLY like the timeline! It looks sick and is informative.                                  | You should consider making the A-Frame smaller. It’s a 3D model you can move around, so it’s unnecessary to have to scroll to the side of the website to view it properly.                                                                                |
+
+
 
