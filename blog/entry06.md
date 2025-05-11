@@ -15,9 +15,9 @@ A lot of people do not know how many different types of wireless communication t
 
 I explored:
 
-* **Bootstrap** for responsive layout
+* [**Bootstrap**](https://getbootstrap.com) for responsive layout
 * **CSS custom properties** for easy theming
-* **A-Frame** for embedding simple 3D models
+* [**A-Frame**](https://aframe.io) for embedding simple 3D models
 
 I sketched a three‐section layout:
 
