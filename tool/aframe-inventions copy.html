@@ -242,125 +242,73 @@
         </a-cylinder>
       </a-entity>
 
-      <!-- Holo Chat Projector -->
-    <a-scene background="color: #181e25" embedded>
-      <!-- Floor reflection -->
-      <a-cylinder radius="1.08" height="0.05" position="0 0 0"
-                  color="#23282e" metalness="0.7" roughness="0.14" opacity="0.97"></a-cylinder>
-      <!-- Booth outer shell -->
-      <a-cylinder radius="1.0" height="2.5" open-ended="true" theta-start="15" theta-length="330"
-                  position="0 1.26 0"
-                  color="#bfc8cf" metalness="1" roughness="0.24" opacity="0.96"></a-cylinder>
-      <!-- Booth inner glass -->
-      <a-cylinder radius="0.88" height="2.32" open-ended="true" theta-start="15" theta-length="330"
-                  position="0 1.25 0"
-                  color="#111822" metalness="0.6" roughness="0.09" opacity="0.22"></a-cylinder>
-      <!-- Booth top & bottom cap -->
-      <a-torus radius="1.04" tube="0.07" arc="330" position="0 2.5 0" rotation="90 0 0"
-               color="#bfc8cf" metalness="1" roughness="0.18"></a-torus>
-      <a-torus radius="1.04" tube="0.07" arc="330" position="0 0 0" rotation="90 0 0"
-               color="#bfc8cf" metalness="1" roughness="0.18"></a-torus>
-      <!-- Booth front sign panel -->
-      <a-box width="0.91" height="0.17" depth="0.03"
-             position="0 2.59 0.97"
-             color="#bfc8cf" metalness="0.93" roughness="0.19"></a-box>
-      <!-- Glowing sign text -->
-      <a-entity text="value: MIND READING\nSTATION; align: center; width: 2.1; color: #fff; font: roboto; letterSpacing: 8;"
-                position="0 2.60 1.01"
-                material="color: #fff; emissive: #c0eaff; emissiveIntensity: 1.2"></a-entity>
-      <!-- Holographic info screens -->
-      <a-plane width="0.34" height="0.13" color="#2cf0ff" opacity="0.11"
-               position="-0.38 1.55 -0.23" rotation="0 10 0"></a-plane>
-      <a-plane width="0.38" height="0.15" color="#2cf0ff" opacity="0.13"
-               position="0.45 1.37 0.14" rotation="0 -14 0"></a-plane>
-      <a-plane width="0.26" height="0.09" color="#2cf0ff" opacity="0.14"
-               position="0.22 1.89 -0.21" rotation="0 9 0"></a-plane>
-      <a-plane width="0.29" height="0.12" color="#2cf0ff" opacity="0.12"
-               position="-0.47 1.11 0.11" rotation="0 16 0"></a-plane>
-      <a-plane width="0.25" height="0.09" color="#2cf0ff" opacity="0.12"
-               position="0.01 1.19 -0.30" rotation="0 0 0"></a-plane>
-      <a-plane width="0.19" height="0.07" color="#2cf0ff" opacity="0.13"
-               position="-0.16 1.69 0.18" rotation="0 6 0"></a-plane>
-      <a-plane width="0.14" height="0.05" color="#2cf0ff" opacity="0.11"
-               position="0.37 1.75 -0.13" rotation="0 -9 0"></a-plane>
-      <!-- Glowing rings / circuit patterns on floor -->
-      <a-ring radius-inner="0.80" radius-outer="0.83" theta-segments="64"
-              position="0 1.21 0" rotation="-90 0 0"
-              color="#72eaff" metalness="0.6" roughness="0.13" emissive="#42eaff" emissiveIntensity="1.6" opacity="0.12"></a-ring>
-      <a-ring radius-inner="0.52" radius-outer="0.56" theta-segments="64"
-              position="0 1.21 0" rotation="-90 0 0"
-              color="#72eaff" metalness="0.5" roughness="0.11" emissive="#42eaff" emissiveIntensity="1.4" opacity="0.08"></a-ring>
-      <!-- Central floating spheres (top and bottom) -->
-      <a-sphere radius="0.18" position="0 1.83 0"
-                color="#b9eaff" metalness="0.3" roughness="0.22"
-                emissive="#6fe8ff" emissiveIntensity="0.35"></a-sphere>
-      <a-sphere radius="0.18" position="0 1.13 0"
-                color="#b9eaff" metalness="0.3" roughness="0.22"
-                emissive="#6fe8ff" emissiveIntensity="0.35"></a-sphere>
-      <!-- Glowing hologram ring -->
-      <a-ring radius-inner="0.19" radius-outer="0.25"
-              position="0 1.48 0" rotation="-90 0 0"
-              color="#bffcff" emissive="#73eaff" emissiveIntensity="1.8" opacity="0.93"></a-ring>
-      <a-ring radius-inner="0.25" radius-outer="0.265"
-              position="0 1.48 0" rotation="-90 0 0"
-              color="#73eaff" emissive="#bffcff" emissiveIntensity="2.5" opacity="0.63"></a-ring>
-      <!-- Simulated vertical lines (no JS: use thin cylinders for glow wires) -->
-      <!-- Top sphere to ring (8 lines, symmetrical) -->
-      <a-cylinder radius="0.005" height="0.36" position="0 1.65 0.09" color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.36" position="0 1.65 -0.09" color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.36" position="0.08 1.65 0" rotation="0 0 17"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.36" position="-0.08 1.65 0" rotation="0 0 -17"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="0.06 1.65 0.06" rotation="0 45 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.65 0.06" rotation="0 -45 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="0.06 1.65 -0.06" rotation="0 135 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.65 -0.06" rotation="0 -135 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <!-- Bottom sphere to ring (8 lines) -->
-      <a-cylinder radius="0.005" height="0.36" position="0 1.31 0.09" color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.36" position="0 1.31 -0.09" color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.36" position="0.08 1.31 0" rotation="0 0 17"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.36" position="-0.08 1.31 0" rotation="0 0 -17"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="0.06 1.31 0.06" rotation="0 45 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.31 0.06" rotation="0 -45 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="0.06 1.31 -0.06" rotation="0 135 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.31 -0.06" rotation="0 -135 0"
-                  color="#73eaff" opacity="0.7"></a-cylinder>
-      <!-- Ring to floor (6 lines, symmetrical) -->
-      <a-cylinder radius="0.0045" height="1.15" position="0 0.905 0.18" color="#73eaff" opacity="0.5"></a-cylinder>
-      <a-cylinder radius="0.0045" height="1.15" position="0 0.905 -0.18" color="#73eaff" opacity="0.5"></a-cylinder>
-      <a-cylinder radius="0.0045" height="1.15" position="0.16 0.905 0.09" color="#73eaff" opacity="0.5"></a-cylinder>
-      <a-cylinder radius="0.0045" height="1.15" position="-0.16 0.905 0.09" color="#73eaff" opacity="0.5"></a-cylinder>
-      <a-cylinder radius="0.0045" height="1.15" position="0.16 0.905 -0.09" color="#73eaff" opacity="0.5"></a-cylinder>
-      <a-cylinder radius="0.0045" height="1.15" position="-0.16 0.905 -0.09" color="#73eaff" opacity="0.5"></a-cylinder>
-      <!-- Booth side hologram patterns -->
-      <a-plane width="0.36" height="0.18" color="#2cf0ff" opacity="0.16"
-               position="-0.97 1.25 0" rotation="0 90 0"></a-plane>
-      <a-plane width="0.36" height="0.18" color="#2cf0ff" opacity="0.16"
-               position="0.97 1.25 0" rotation="0 -90 0"></a-plane>
-      <!-- Subtle interior grid lines -->
-      <a-torus radius="0.63" tube="0.005" arc="330"
-               position="0 1.10 0" rotation="90 0 0"
-               color="#73eaff" emissive="#73eaff" emissiveIntensity="0.6" opacity="0.16"></a-torus>
-      <a-torus radius="0.78" tube="0.006" arc="330"
-               position="0 1.80 0" rotation="90 0 0"
-               color="#73eaff" emissive="#73eaff" emissiveIntensity="0.5" opacity="0.10"></a-torus>
-      <!-- Lighting -->
-      <a-light type="point" color="#c7f2ff" intensity="1.1" distance="3.6" position="0 1.5 0"></a-light>
-      <a-light type="ambient" color="#90aabf" intensity="0.41"></a-light>
-      <a-light type="spot" color="#b6eaff" intensity="0.31" distance="4"
-               angle="38" penumbra="0.45" position="0 3.0 0" target="0 1.48 0"></a-light>
-      <!-- Camera -->
-      <a-entity camera position="0 1.5 3.3" look-controls wasd-controls></a-entity>
+     <!-- Holo Chat Projector -->
+      <a-entity position="10 0 0">
+
+        <a-entity position="0 0 -3">
+
+
+          <!-- Green Rings at the Back -->
+        <a-ring
+          position="0 1 -0.5"
+          radius-inner="0.6"
+          radius-outer="0.7"
+          color="#00ff00"
+          animation="property: scale; to: 1.5 1.5 1.5; dir: alternate; loop: true; dur: 1200"
+        ></a-ring>
+        <a-ring
+          position="0 1 -0.5"
+          radius-inner="0.8"
+          radius-outer="0.9"
+          color="#00cc00"
+          animation="property: scale; to: 1.3 1.3 1.3; dir: alternate; loop: true; delay: 200; dur: 1200"
+        ></a-ring>
+
+          <a-cylinder position="0 0.1 0" radius="0.5" height="0.2" color="#2c3e50"></a-cylinder>
+          <a-torus position="0 0.2 0" radius="0.5" radius-tubular="0.05" color="#34495e"></a-torus>
+          <a-cylinder position="0 0.3 0" radius="0.3" height="0.4" color="#1abc9c"></a-cylinder>
+          <a-sphere position="0 0.5 0" radius="0.1" color="#f9ca24" emissive="#f9ca24"></a-sphere>
+          <a-cone position="0 1.5 0" radius-bottom="0.3" radius-top="0.05" height="2" color="#00d2d3" opacity="0.2"></a-cone>
+          <a-entity position="0 1.8 0">
+            <a-box color="#3498db" position="0 0.8 0" depth="0.2" width="0.5" height="1.2" opacity="0.7"></a-box>
+            <a-sphere color="#9b59b6" position="0 1.6 0" radius="0.25" opacity="0.7"></a-sphere>
+          </a-entity>
+
+          <a-cylinder position="-2.5 0.5 0" radius="0.4" height="1.2" color="#808080"></a-cylinder>
+
+          <a-image src="../prep/images/holo-chat-projector.png"
+          position="-2.5 1.6 0"
+          width="1"
+          height="1"
+          scale="1 1 1">
+
+          <a-box color="#000435"
+          position="5.5 -1 0"
+          width="0.7"
+          depth="0.1"
+          height="0.9"
+          scale="3 3 1">
+          </a-box>
+
+          <a-text value="1. Shows 3D holograms of people during calls.
+
+            This small device makes a 3D image of the person you’re talking to. It looks like they are standing in front of you, making calls feel real.
+
+          2. Small and easy to carry anywhere.
+
+            The projector is small and light, so you can take it with you anywhere. It fits in a bag or pocket and works for hours without needing to be plugged in.
+
+          3. Lets you use hand gestures and share 3D objects.
+
+            You can wave your hands to control the hologram or move things around. It’s great for showing 3D models or working together on projects."
+
+
+
+          position="4.5 -0.6 0.1"
+          width="2">
+
+        </a-entity>
+      </a-entity>
     </a-scene>
   </body>
 </html>
