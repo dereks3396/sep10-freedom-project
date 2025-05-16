@@ -14,86 +14,126 @@
     <a-scene background="color: #000">
       <a-plane rotation="-90 0 0" width="50" height="25" color="#111" shadow></a-plane>
 
-      <!-- MindLink Messaging Booth, centered at (-10, 0, 0) -->
-      <a-entity position="-10 0 0">
-        <!-- Booth base platform -->
-        <a-cylinder radius="1.08" height="0.05" position="0 0 -3"
-                    color="#23282e" metalness="0.7" roughness="0.14" opacity="0.97"></a-cylinder>
-        <!-- Booth shell -->
-        <a-cylinder radius="1.0" height="2.2" open-ended="true" theta-start="15" theta-length="330"
-                    position="0 1.1 -3"
-                    color="#16a085" metalness="0.8" roughness="0.23" opacity="0.92"></a-cylinder>
-        <!-- Booth inner glass -->
-        <a-cylinder radius="0.88" height="2.05" open-ended="true" theta-start="15" theta-length="330"
-                    position="0 1.1 -3"
-                    color="#111822" metalness="0.6" roughness="0.09" opacity="0.22"></a-cylinder>
-        <!-- Booth top & bottom cap (rings) -->
-        <a-torus radius="1.04" tube="0.07" arc="330" position="0 2.2 -3" rotation="90 0 0"
-                 color="#16a085" metalness="1" roughness="0.18"></a-torus>
-        <a-torus radius="1.04" tube="0.07" arc="330" position="0 0 -3" rotation="90 0 0"
-                 color="#16a085" metalness="1" roughness="0.18"></a-torus>
-        <!-- Front sign panel -->
-        <a-box width="0.91" height="0.17" depth="0.03"
-               position="0 2.28 -2.03"
-               color="#16a085" metalness="0.93" roughness="0.19"></a-box>
-        <!-- Glowing sign text: MindLink Messaging -->
-        <a-entity text="value: MINDLINK\nMESSAGING; align: center; width: 2.1; color: #fff; font: roboto; letterSpacing: 8;"
-                  position="0 2.30 -2.0"
-                  material="color: #fff; emissive: #7bddff; emissiveIntensity: 1.1"></a-entity>
-        <!-- Booth pillar (side box, matching original) -->
-        <a-box color="#16a085" position="0 0.75 -3" depth="0.3" width="0.3" height="1.5"></a-box>
-        <a-sphere color="#27ae60" position="0 1.7 -3" radius="0.2"></a-sphere>
-        <!-- Messaging ring and attached spheres -->
-        <a-entity position="0 1.5 -3">
-          <a-torus color="#2e86de" radius="0.5" tube="0.03" rotation="0 0 90"></a-torus>
-          <a-sphere position="0.5 0.1 0" radius="0.05" color="#74b9ff"></a-sphere>
-          <a-sphere position="-0.5 0.1 0" radius="0.05" color="#74b9ff"></a-sphere>
-          <a-sphere position="0 0.1 0.5" radius="0.05" color="#74b9ff"></a-sphere>
-          <a-sphere position="0 0.1 -0.5" radius="0.05" color="#74b9ff"></a-sphere>
-          <!-- Message box (main) -->
-          <a-box position="0 0.3 0" depth="0.2" height="0.2" width="0.3" color="#192a56"></a-box>
-          <a-box position="0 0.4 0" depth="0.15" height="0.15" width="0.25" color="#273c75"></a-box>
-          <!-- Animated lines (simulate signal lines) -->
-          <a-cylinder position="0 0.5 0" height="1" radius="0.02" color="#4cd137"
-            animation="property: position; to: 0 2 0; dir: alternate; loop: true; dur: 1000"></a-cylinder>
-          <a-cylinder position="0.2 0.4 0.2" height="1.2" radius="0.02" color="#4cd137"
-            animation="property: position; to: 0.2 1.8 0.2; dir: alternate; loop: true; dur: 1200"></a-cylinder>
-          <a-cylinder position="-0.2 0.6 -0.2" height="0.8" radius="0.02" color="#4cd137"
-            animation="property: position; to: -0.2 1.6 -0.2; dir: alternate; loop: true; dur: 900"></a-cylinder>
-          <!-- Top animated glowing sphere (message "thought") -->
-          <a-sphere position="0 2 0" radius="0.3" color="#f8c291" opacity="0.9"
-            animation="property: position; to: 0 2.5 0; dir: alternate; loop: true; dur: 1500"></a-sphere>
-          <!-- Floating message text -->
-          <a-plane width="1" height="0.5" color="#f6e58d" opacity="0.95" position="0 2.8 0">
-            <a-entity text="value: Your Thought Here; align: center; color: #000"></a-entity>
-          </a-plane>
-        </a-entity>
-        <!-- Booth side hologram panels (to echo the original side planes) -->
-        <a-plane width="0.36" height="0.18" color="#2cf0ff" opacity="0.15"
-                 position="-0.97 1.1 -3" rotation="0 90 0"></a-plane>
-        <a-plane width="0.36" height="0.18" color="#2cf0ff" opacity="0.15"
-                 position="0.97 1.1 -3" rotation="0 -90 0"></a-plane>
-      </a-entity>
-      <!-- Console cylinder and image -->
-      <a-cylinder position="-12 0.5 -3" radius="0.4" height="1.2" color="#808080"></a-cylinder>
-      <a-image src="../prep/images/mindlink-messaging(1).png"
-               position="-12 1.6 -3"
-               width="1"
-               height="1"
-               scale="1 1 1"></a-image>
-      <!-- Info/Control Panel (as per original) -->
-      <a-box color="#000435"
-             position="-8 0 -3"
-             width="2.1"
-             depth="0.3"
-             height="4.2"></a-box>
-      <!-- Lighting (adjusted for area and colors) -->
-      <a-light type="point" color="#c7f2ff" intensity="1.1" distance="5.2" position="-10 1.5 -2.7"></a-light>
+      <!-- MindLink Messaging -->
+   <a-entity position="-10 0 0">
+      <!-- Floor reflection -->
+      <a-cylinder radius="1.08" height="0.05" position="0 0 0"
+                  color="#23282e" metalness="0.7" roughness="0.14" opacity="0.97"></a-cylinder>
+      <!-- Booth outer shell -->
+      <a-cylinder radius="1.0" height="2.5" open-ended="true" theta-start="15" theta-length="330"
+                  position="0 1.26 0"
+                  color="#bfc8cf" metalness="1" roughness="0.24" opacity="0.96"></a-cylinder>
+      <!-- Booth inner glass -->
+      <a-cylinder radius="0.88" height="2.32" open-ended="true" theta-start="15" theta-length="330"
+                  position="0 1.25 0"
+                  color="#111822" metalness="0.6" roughness="0.09" opacity="0.22"></a-cylinder>
+      <!-- Booth top & bottom cap -->
+      <a-torus radius="1.04" tube="0.07" arc="330" position="0 2.5 0" rotation="90 0 0"
+               color="#bfc8cf" metalness="1" roughness="0.18"></a-torus>
+      <a-torus radius="1.04" tube="0.07" arc="330" position="0 0 0" rotation="90 0 0"
+               color="#bfc8cf" metalness="1" roughness="0.18"></a-torus>
+      <!-- Booth front sign panel -->
+      <a-box width="0.91" height="0.17" depth="0.03"
+             position="0 2.59 0.97"
+             color="#bfc8cf" metalness="0.93" roughness="0.19"></a-box>
+      <!-- Glowing sign text -->
+      <a-entity text="value: MIND READING\nSTATION; align: center; width: 2.1; color: #fff; font: roboto; letterSpacing: 8;"
+                position="0 2.60 1.01"
+                material="color: #fff; emissive: #c0eaff; emissiveIntensity: 1.2"></a-entity>
+      <!-- Holographic info screens -->
+      <a-plane width="0.34" height="0.13" color="#2cf0ff" opacity="0.11"
+               position="-0.38 1.55 -0.23" rotation="0 10 0"></a-plane>
+      <a-plane width="0.38" height="0.15" color="#2cf0ff" opacity="0.13"
+               position="0.45 1.37 0.14" rotation="0 -14 0"></a-plane>
+      <a-plane width="0.26" height="0.09" color="#2cf0ff" opacity="0.14"
+               position="0.22 1.89 -0.21" rotation="0 9 0"></a-plane>
+      <a-plane width="0.29" height="0.12" color="#2cf0ff" opacity="0.12"
+               position="-0.47 1.11 0.11" rotation="0 16 0"></a-plane>
+      <a-plane width="0.25" height="0.09" color="#2cf0ff" opacity="0.12"
+               position="0.01 1.19 -0.30" rotation="0 0 0"></a-plane>
+      <a-plane width="0.19" height="0.07" color="#2cf0ff" opacity="0.13"
+               position="-0.16 1.69 0.18" rotation="0 6 0"></a-plane>
+      <a-plane width="0.14" height="0.05" color="#2cf0ff" opacity="0.11"
+               position="0.37 1.75 -0.13" rotation="0 -9 0"></a-plane>
+      <!-- Glowing rings / circuit patterns on floor -->
+      <a-ring radius-inner="0.80" radius-outer="0.83" theta-segments="64"
+              position="0 1.21 0" rotation="-90 0 0"
+              color="#72eaff" metalness="0.6" roughness="0.13" emissive="#42eaff" emissiveIntensity="1.6" opacity="0.12"></a-ring>
+      <a-ring radius-inner="0.52" radius-outer="0.56" theta-segments="64"
+              position="0 1.21 0" rotation="-90 0 0"
+              color="#72eaff" metalness="0.5" roughness="0.11" emissive="#42eaff" emissiveIntensity="1.4" opacity="0.08"></a-ring>
+      <!-- Central floating spheres (top and bottom) -->
+      <a-sphere radius="0.18" position="0 1.83 0"
+                color="#b9eaff" metalness="0.3" roughness="0.22"
+                emissive="#6fe8ff" emissiveIntensity="0.35"></a-sphere>
+      <a-sphere radius="0.18" position="0 1.13 0"
+                color="#b9eaff" metalness="0.3" roughness="0.22"
+                emissive="#6fe8ff" emissiveIntensity="0.35"></a-sphere>
+      <!-- Glowing hologram ring -->
+      <a-ring radius-inner="0.19" radius-outer="0.25"
+              position="0 1.48 0" rotation="-90 0 0"
+              color="#bffcff" emissive="#73eaff" emissiveIntensity="1.8" opacity="0.93"></a-ring>
+      <a-ring radius-inner="0.25" radius-outer="0.265"
+              position="0 1.48 0" rotation="-90 0 0"
+              color="#73eaff" emissive="#bffcff" emissiveIntensity="2.5" opacity="0.63"></a-ring>
+      <!-- Simulated vertical lines (no JS: use thin cylinders for glow wires) -->
+      <!-- Top sphere to ring (8 lines, symmetrical) -->
+      <a-cylinder radius="0.005" height="0.36" position="0 1.65 0.09" color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.36" position="0 1.65 -0.09" color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.36" position="0.08 1.65 0" rotation="0 0 17"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.36" position="-0.08 1.65 0" rotation="0 0 -17"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="0.06 1.65 0.06" rotation="0 45 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.65 0.06" rotation="0 -45 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="0.06 1.65 -0.06" rotation="0 135 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.65 -0.06" rotation="0 -135 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <!-- Bottom sphere to ring (8 lines) -->
+      <a-cylinder radius="0.005" height="0.36" position="0 1.31 0.09" color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.36" position="0 1.31 -0.09" color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.36" position="0.08 1.31 0" rotation="0 0 17"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.36" position="-0.08 1.31 0" rotation="0 0 -17"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="0.06 1.31 0.06" rotation="0 45 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.31 0.06" rotation="0 -45 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="0.06 1.31 -0.06" rotation="0 135 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <a-cylinder radius="0.005" height="0.37" position="-0.06 1.31 -0.06" rotation="0 -135 0"
+                  color="#73eaff" opacity="0.7"></a-cylinder>
+      <!-- Ring to floor (6 lines, symmetrical) -->
+      <a-cylinder radius="0.0045" height="1.15" position="0 0.905 0.18" color="#73eaff" opacity="0.5"></a-cylinder>
+      <a-cylinder radius="0.0045" height="1.15" position="0 0.905 -0.18" color="#73eaff" opacity="0.5"></a-cylinder>
+      <a-cylinder radius="0.0045" height="1.15" position="0.16 0.905 0.09" color="#73eaff" opacity="0.5"></a-cylinder>
+      <a-cylinder radius="0.0045" height="1.15" position="-0.16 0.905 0.09" color="#73eaff" opacity="0.5"></a-cylinder>
+      <a-cylinder radius="0.0045" height="1.15" position="0.16 0.905 -0.09" color="#73eaff" opacity="0.5"></a-cylinder>
+      <a-cylinder radius="0.0045" height="1.15" position="-0.16 0.905 -0.09" color="#73eaff" opacity="0.5"></a-cylinder>
+      <!-- Booth side hologram patterns -->
+      <a-plane width="0.36" height="0.18" color="#2cf0ff" opacity="0.16"
+               position="-0.97 1.25 0" rotation="0 90 0"></a-plane>
+      <a-plane width="0.36" height="0.18" color="#2cf0ff" opacity="0.16"
+               position="0.97 1.25 0" rotation="0 -90 0"></a-plane>
+      <!-- Subtle interior grid lines -->
+      <a-torus radius="0.63" tube="0.005" arc="330"
+               position="0 1.10 0" rotation="90 0 0"
+               color="#73eaff" emissive="#73eaff" emissiveIntensity="0.6" opacity="0.16"></a-torus>
+      <a-torus radius="0.78" tube="0.006" arc="330"
+               position="0 1.80 0" rotation="90 0 0"
+               color="#73eaff" emissive="#73eaff" emissiveIntensity="0.5" opacity="0.10"></a-torus>
+      <!-- Lighting -->
+      <a-light type="point" color="#c7f2ff" intensity="1.1" distance="3.6" position="0 1.5 0"></a-light>
       <a-light type="ambient" color="#90aabf" intensity="0.41"></a-light>
-      <a-light type="spot" color="#b6eaff" intensity="0.31" distance="5"
-               angle="38" penumbra="0.45" position="-10 3.0 -2.5" target="-10 1.5 -3"></a-light>
-      <!-- Camera (centered on the new booth region) -->
-      <a-entity camera position="-10 1.5 1.5" look-controls wasd-controls></a-entity>
+      <a-light type="spot" color="#b6eaff" intensity="0.31" distance="4"
+               angle="38" penumbra="0.45" position="0 3.0 0" target="0 1.48 0"></a-light>
+
+
+    </a-scene>
 
       <a-text value="1. Send messages from your thoughts without typing or speaking.
 
